@@ -1,5 +1,6 @@
 /* General Styles */
 body {
+    color: black;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,26 +8,38 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #65ccb8;
+    font-family: 'Franziska, Georgia, Cambria';
+    font-size: 20px;
+    color: black;
     padding: 20px;
-    text-align: center;
+    display:flex;
+    justify-content: flex-end;
+    gap: 10px;
+
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+button {
+    padding: 10px 20px;
+    background-color: black;
     color: white;
-    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+    font-family: 'Franziska, Georgia, Cambria';
+    font-size: 20px;
+
+}
+
+
 
 section {
     padding: 20px;
@@ -34,8 +47,8 @@ section {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #65ccb8;
+    color: black;
     text-align: center;
     padding: 10px;
     position: fixed;
