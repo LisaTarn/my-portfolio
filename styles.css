@@ -1,5 +1,6 @@
 /* General Styles */
 body {
+    background-color: #65ccb8;
     color: black;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -30,16 +31,19 @@ button {
 }
 
 .grid-container {
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
     font-family: 'Franziska, Georgia, Cambria';
     font-size: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
-
-
 
 section {
     padding: 20px;
