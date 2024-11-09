@@ -20,7 +20,29 @@ header {
 
 }
 
-button {
+.linkbutton {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button,
+[role="button"]{
+    padding: 3px;
+    border: 20x solid transparent
+}
+
+button:active,
+button:focus,
+[role="button"][aria-pressed="true"]{
+    border: 2px solid#000;
+}
+
+.projectbutton {
     padding: 10px 20px;
     background-color: black;
     color: white;

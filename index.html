@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -12,9 +13,9 @@
    <header> 
         <div class ="name">Lisa Tarnow</div>
 
-             <a href="#about"><button id="about">About</button></a>
-                <a href="#projects"><button id="projects">Projects</button></a>
-                <a href="#contact"><button id="contact">Contact</button></a>
+             <a href="#about"><button id="about" class="linkbutton">About</button></a>
+                <a href="#projects"><button id="projects" class ="linkbutton">Projects</button></a>
+                <a href="#contact"><button id="contact" class="linkbutton">Contact</button></a>
     </header>
 
 
@@ -28,7 +29,40 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
-        <p>This is a placeholder for your projects. In future chapters, you’ll add real projects here.</p>
+        <p><button id="project1-btn" 
+            class="projectbutton"
+            type = "button"
+            onclick="handleBtnClick1(event)">Show Project 1 Details</button>
+        <span 
+         role ="button"
+         tabindex="0"
+         aria-pressed="false"
+        onclick="handleBtnClick1(event)">Hide Details</span></p>
+       
+        <div id="project1"></div>
+
+        <p><button id="project2-btn" 
+            class="projectbutton"
+            type = "button"
+            onclick="handleBtnClick2(event)">Show Project 2 Details</button>
+        <span 
+         role ="button"
+         tabindex="0"
+         aria-pressed="false"
+        onclick="handleBtnClick2(event)">Hide Details</span></p>
+        
+        <div id="project2"></div>
+
+        <p><button id="project3-btn" 
+            class="projectbutton"
+            type = "button"
+            onclick="handleBtnClick3(event)">Show Project 3 Details</button>
+        <span
+         role = "button"
+         tabindex="0"
+         aria-pressed="false"
+        onclick="handleBtnClick3(event)">Hide Details</span></p>
+        <div id="project3"></div>    
     </section>
 
     <!-- Contact Section -->
