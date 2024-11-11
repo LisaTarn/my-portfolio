@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -23,6 +24,7 @@
      <div class="grid-container">
     <section id="about">
         <h2>About Me</h2>
+      
         <p>Hi, I am Lisa.  I am a computer programming student at Humber College, in Toronto, Ontario. I am currently learning HTML, CSS, Java and JavaScript.  Previously, I worked in the corporate fitness industry, managing corporate gyms and running wellness programs for employees. I am passionate about Health, Wellness and Technology and would like to use what I learn in these courses to apply it to interesting Health and Wellness solutions.</p>
     </section>
 
@@ -32,37 +34,23 @@
         <p><button id="project1-btn" 
             class="projectbutton"
             type = "button"
-            onclick="handleBtnClick1(event)">Show Project 1 Details</button>
-        <span 
-         role ="button"
-         tabindex="0"
-         aria-pressed="false"
-        onclick="handleBtnClick1(event)">Hide Details</span></p>
+            onclick="toggleelement1()">Show/Hide Project 1 Details</button>
        
-        <div id="project1"></div>
+        <div id="project1">Project 1 Details</div>
 
         <p><button id="project2-btn" 
             class="projectbutton"
             type = "button"
-            onclick="handleBtnClick2(event)">Show Project 2 Details</button>
-        <span 
-         role ="button"
-         tabindex="0"
-         aria-pressed="false"
-        onclick="handleBtnClick2(event)">Hide Details</span></p>
+            onclick="toggleelement2()">Show/Hide Project 2 Details</button>
         
-        <div id="project2"></div>
+        
+        <div id="project2">Project 2 Details</div>
 
         <p><button id="project3-btn" 
             class="projectbutton"
             type = "button"
-            onclick="handleBtnClick3(event)">Show Project 3 Details</button>
-        <span
-         role = "button"
-         tabindex="0"
-         aria-pressed="false"
-        onclick="handleBtnClick3(event)">Hide Details</span></p>
-        <div id="project3"></div>    
+            onclick="toggleelement3()">Show/Hide Project 3 Details</button>
+        <div id="project3">Project 3 Details</div>    
     </section>
 
     <!-- Contact Section -->
