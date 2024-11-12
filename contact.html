@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    
+   <header> 
+        <div class ="name">Lisa Tarnow</div>
+
+             <a href="about.html"><button id="about.html" class="linkbutton">About</button></a>
+                <a href="projects.html"><button id="projects.html" class ="linkbutton">Projects</button></a>
+                <a href="index.html"><button id="index.html" class="linkbutton">Home</button></a>
+    </header>
+
+
+    <!-- About Section -->
+     <div class="grid-container">
+        <div class id="image"> 
+            <img src="image.jpg">
+        </div>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="fullname" name="name" required minlength="4"><br><br>
+            <span class="error" aria-live="polite"></span>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required minlength="8"><br><br>
+            <span class="error" aria-live="polite"></span>
+
+            <label for="message">Message:</label>
+            <textarea id="message" row="5" column="30" required minlength="15"></textarea><br><br>
+            <span class="error" aria-live="polite"></span>
+        
+            <button id="submit" class="linkbutton">Submit</button>
+        </form>
+    </section></div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Lisa Tarnow</p>
+    </footer>
+</body>
+</html>

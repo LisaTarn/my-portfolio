@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    
+   <header> 
+        <div class ="name">Lisa Tarnow</div>
+
+             <a href="about.html"><button id="about.html" class="linkbutton">About</button></a>
+                <a href="index.html"><button id="index.html" class ="linkbutton">Home</button></a>
+                <a href="contact.html"><button id="contact.html" class="linkbutton">Contact</button></a>
+    </header>
+
+
+    <!-- About Section -->
+     <div class="grid-container">
+        <div class id="image"> 
+            <img src="image.jpg">
+        </div>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p><button id="project1-btn" 
+            class="projectbutton"
+            type = "button"
+            onclick="toggleelement1()">Show/Hide Project 1 Details</button>
+       
+        <div id="project1">
+        <p><a href="https://lisatarn.github.io/my-first-webpage/">MY FIRST WEBPAGE</a></p></div>
+
+        <p><button id="project2-btn" 
+            class="projectbutton"
+            type = "button"
+            onclick="toggleelement2()">Show/Hide Project 2 Details</button>
+        
+        
+        <div id="project2"><p><a href="https://lisatarn.github.io/Using-HTML5-Web-Storage-API/">LOCAL STORAGE ASSIGNMENT</a></p></div>
+
+        <p><button id="project3-btn" 
+            class="projectbutton"
+            type = "button"
+            onclick="toggleelement3()">Show/Hide Project 3 Details</button>
+        <div id="project3"><p><a href="https://lisatarn.github.io/CSS-Fundamentals-Lab-3/">REGISTRATION FORM</a></p></div>    
+    </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Lisa Tarnow</p>
+    </footer>
+</body>
+</html>

@@ -14,65 +14,26 @@
    <header> 
         <div class ="name">Lisa Tarnow</div>
 
-             <a href="#about"><button id="about" class="linkbutton">About</button></a>
-                <a href="#projects"><button id="projects" class ="linkbutton">Projects</button></a>
-                <a href="#contact"><button id="contact" class="linkbutton">Contact</button></a>
+             <a href="about.html"><button id="about.html" class="linkbutton">About</button></a>
+                <a href="projects.html"><button id="projects.html" class ="linkbutton">Projects</button></a>
+                <a href="contact.html"><button id="contact.html" class="linkbutton">Contact</button></a>
     </header>
-
-
-    <!-- About Section -->
-     <div class="grid-container">
-    <section id="about">
-        <h2>About Me</h2>
-      
-        <p>Hi, I am Lisa.  I am a computer programming student at Humber College, in Toronto, Ontario. I am currently learning HTML, CSS, Java and JavaScript.  Previously, I worked in the corporate fitness industry, managing corporate gyms and running wellness programs for employees. I am passionate about Health, Wellness and Technology and would like to use what I learn in these courses to apply it to interesting Health and Wellness solutions.</p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p><button id="project1-btn" 
-            class="projectbutton"
-            type = "button"
-            onclick="toggleelement1()">Show/Hide Project 1 Details</button>
-       
-        <div id="project1">Project 1 Details</div>
-
-        <p><button id="project2-btn" 
-            class="projectbutton"
-            type = "button"
-            onclick="toggleelement2()">Show/Hide Project 2 Details</button>
-        
-        
-        <div id="project2">Project 2 Details</div>
-
-        <p><button id="project3-btn" 
-            class="projectbutton"
-            type = "button"
-            onclick="toggleelement3()">Show/Hide Project 3 Details</button>
-        <div id="project3">Project 3 Details</div>    
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="#" method="POST">
-            <label for="name">Full Name:</label>
-            <input type="text" id="fullname" name="name" required minlength="4"><br><br>
-            <span class="error" aria-live="polite"></span>
-            
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required minlength="8"><br><br>
-            <span class="error" aria-live="polite"></span>
-
-            <label for="message">Message:</label>
-            <textarea id="message" row="5" column="30" required minlength="15"></textarea><br><br>
-            <span class="error" aria-live="polite"></span>
-        
-            <button id="submit" class="linkbutton">Submit</button>
-        </form>
-    </section></div>
-
+    <div class="grid-container">
+    <div class id="image"> 
+        <img src="image.jpg">
+    </div>
+    <div class id="typing">
+        <br><br><br>
+    <span id="element">
+    </span>
+    </div>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Welcome to my website.  Please follow the projects link to view my most recent projects, please follow the about link to learn more about me, and please follow the contact link to contact me.'],
+                typeSpeed: 50,
+        });
+    </script>
+    </div>
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Lisa Tarnow</p>
