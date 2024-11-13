@@ -100,17 +100,23 @@ input:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.94);
 }
 
+input:invalid {
+    border: 2px dashed red;
+  }
+  
+  input:invalid:required {
+    background-image: linear-gradient(to right, white, #65ccb8);
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }
+  
 textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
     box-sizing: border-box;
-}
-
-
-section {
-    padding: 20px;
-    margin: 20px;
 }
 
 footer {
