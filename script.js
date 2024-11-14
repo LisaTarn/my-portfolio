@@ -48,7 +48,8 @@ function toggleelement1(){
           const email = document.getElementById("email");
       
       
-          if (name.validity.typeMismatch) {
+          if (!(name >= "a" && name <= "z") &&
+          !(name >="A" && name <= "Z")){
           name.setCustomValidity("Please enter your name");
           }
           else {
