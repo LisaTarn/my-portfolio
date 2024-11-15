@@ -38,12 +38,14 @@ function toggleelement1(){
       }else{
         paragraph.style.visibility = 'hidden';
       }
-      }
-  
-      const submitButton = document.getElementById("submit");
-      submitButton.addEventListener ("click", validate());
       
-      function validate(){
+      const canvas = document.getElementById("canvas");
+      const context = canvas.getContext ("2d")
+      
+      context.fillStyle = "#65ccb8";
+      context.fillRect(10, 10, 150, 100);
+
+
           const name = document.getElementById("name");
           const email = document.getElementById("email");
       
