@@ -6,6 +6,7 @@ html {
 
 body {
     background-color: white;
+    text-align: center;
     color: black;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -87,6 +88,19 @@ button:focus,
     text-align: center;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.flex-container {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.flex-item{
+    flex: 1 1 calc(33.333% - 20px);
 
 }
 
