@@ -101,6 +101,12 @@ button:focus,
 
 .flex-item{
     flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8 px;
+    padding:20 px;
+    text-align:center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
