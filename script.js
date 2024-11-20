@@ -1,3 +1,10 @@
+const toggleThemeButton = document.getElementById('toggleTheme');
+
+toggleThemeButton.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+});
+
+
 const project1Button = document.getElementById("project1-btn")
 const project2Button = document.getElementById("project2-btn")
 const project3Button = document.getElementById("project3-btn")
