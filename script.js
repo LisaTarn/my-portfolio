@@ -46,11 +46,54 @@ function toggleelement1(){
         paragraph.style.visibility = 'hidden';
       }
       
-      const canvas = document.getElementById("canvas");
-      const context = canvas.getContext ("2d")
+
+const data = {
+  labels: ['HTML', 'CSS', 'JAVASCRIPT', 'JAVA'],
+  datasets: [{
+    label: "Projects I've worked on",
+    data: [9, 2, 10, 10],
+    backgroundColor: [
+      'rgba(255, 26, 104, 0.2)',
+      'rgba(255, 26, 104, 0.2)',
+      'rgba(255, 26, 104, 0.2)',
+      'rgba(255, 26, 104, 0.2)'
+    ],
+    borderColor: [
+      'rgba(255, 26, 104, 1)',
+      'rgba(255, 26, 104, 1)',
+      'rgba(255, 26, 104, 1)',
+      'rgba(255, 26, 104, 1)'
+    ],
+    borderWidth: 1
+  }]
+};
+
+// config 
+const config = {
+  type: 'bar',
+  data,
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+};
+
       
-      context.fillStyle = "#65ccb8";
-      context.fillRect(10, 10, 150, 100);
+      // render init block
+      const myChart = new Chart(
+        document.getElementById('canvas'),
+        config
+      );
+      
+      
+   //   function updateChart(exercise){
+   //     myChart.config.data.datasets[0].data.push(exercise.value);
+   //     myChart.config.data.datasets[0].data.shift();
+   //     myChart.update();
+   //   };
 
 
           const name = document.getElementById("name");
