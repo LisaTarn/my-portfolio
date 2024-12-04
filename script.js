@@ -68,15 +68,30 @@ function toggleelement1(){
       });
 
       
-      function validate(){
-      const name = document.getElementById("name");
-      const email = document.getElementById("email");
-  
-      if (name == " " || email == " "){
-      name.setCustomValidity("Please enter your name");
-      email.setCustomValidity("Please enter your email")
-      }
-      else {
-          alert("Thank you for filling out all the fields.");
-      }};      
+      function validate(event){
+
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+
+
+        if (name == ""){
+          event.preventDefault();
+        name.setCustomValidity("Please enter your name");
+        }
+        else {
+            name.setCustomValidity("");
+        }
+
+        if (email.validity.typeMismatch){
+            event.preventDefault();
+            email.setCustomValidity("Please enter your email address");
+
+        }
+        else{
+            email.setCustomValidity("");
+        }
+      };
       
+      function thankYou(){
+        alert("Thank you for submitting your message.")
+      };
