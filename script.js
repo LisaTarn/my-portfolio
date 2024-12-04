@@ -51,55 +51,26 @@ function toggleelement1(){
         paragraph.style.visibility = 'hidden';
       }
       
+      const ctx = document.getElementById('canvas');
 
-const data = {
-  labels: ['HTML', 'CSS', 'JAVASCRIPT', 'JAVA'],
-  datasets: [{
-    label: "Projects I've worked on",
-    data: [9, 2, 10, 10],
-    backgroundColor: [
-      'rgba(255, 26, 104, 0.2)',
-      'rgba(255, 26, 104, 0.2)',
-      'rgba(255, 26, 104, 0.2)',
-      'rgba(255, 26, 104, 0.2)'
-    ],
-    borderColor: [
-      'rgba(255, 26, 104, 1)',
-      'rgba(255, 26, 104, 1)',
-      'rgba(255, 26, 104, 1)',
-      'rgba(255, 26, 104, 1)'
-    ],
-    borderWidth: 1
-  }]
-};
-
-// config 
-const config = {
-  type: 'bar',
-  data,
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
-  }
-};
-
-      
-      // render init block
-      const myChart = new Chart(
-        document.getElementById('canvas'),
-        config
-      );
-      
-      
-   //   function updateChart(exercise){
-   //     myChart.config.data.datasets[0].data.push(exercise.value);
-   //     myChart.config.data.datasets[0].data.shift();
-   //     myChart.update();
-   //   };
-
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['HTML', 'CSS', 'JavaScript', 'Java'],
+          datasets: [{
+            label: 'Projects By Language',
+            data: [12, 10, 11, 9],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
 
           const name = document.getElementById("name");
           const email = document.getElementById("email");
