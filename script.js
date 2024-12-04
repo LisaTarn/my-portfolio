@@ -1,8 +1,3 @@
-document.getElementById('contact').addEventListener('submit', () => {
-
-  alert('Thank you for your submission.  I will reach out to you within 48 hours.')
-})
-
 const toggleThemeButton = document.getElementById('toggleTheme');
 
 toggleThemeButton.addEventListener('click', function() {
@@ -49,7 +44,7 @@ function toggleelement1(){
         paragraph.style.visibility = 'visible';
       }else{
         paragraph.style.visibility = 'hidden';
-      }
+      }};
       
       const ctx = document.getElementById('canvas');
 
@@ -72,23 +67,16 @@ function toggleelement1(){
         }
       });
 
-          const name = document.getElementById("name");
-          const email = document.getElementById("email");
       
+      function validate(){
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+  
+      if (name == " " || email == " "){
+      name.setCustomValidity("Please enter your name");
+      email.setCustomValidity("Please enter your email")
+      }
+      else {
+          alert("Thank you for filling out all the fields.");
+      }};      
       
-          if (!(name >= "a" && name <= "z") &&
-          !(name >="A" && name <= "Z")){
-          name.setCustomValidity("Please enter your name");
-          }
-          else {
-              name.setCustomValidity("");
-          }
-        
-          if (email.validity.typeMismatch){
-              email.setCustomValidity("Please enter your email address");
-      
-          }
-          else{
-              email.setCustomValidity("");
-          }
-        };
