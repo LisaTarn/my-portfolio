@@ -1,3 +1,8 @@
+document.getElementById('contact').addEventListener('submit', () => {
+
+  alert('Thank you for your submission.  I will reach out to you within 48 hours.')
+})
+
 const toggleThemeButton = document.getElementById('toggleTheme');
 
 toggleThemeButton.addEventListener('click', function() {
